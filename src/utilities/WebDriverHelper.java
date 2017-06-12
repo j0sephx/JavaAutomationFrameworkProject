@@ -20,6 +20,11 @@ public class WebDriverHelper
 	
 	private static WebDriver driver; 
 	
+	public static void assertElementIsDisplayed(ElementInfo elementInfo) throws Exception
+	{
+		driver.findElement(elementInfo.getLocator()).isDisplayed();
+	}
+	
 	public static void assertElementTextContains(ElementInfo elementInfo, String expectedText)
 	{
 		String elementText = driver.findElement(elementInfo.getLocator()).getText();		
