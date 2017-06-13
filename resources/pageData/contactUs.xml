@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Elements> 
+<Page name="ContactUs">
+<Elements>
+    <WebElement name="inputEmail" locatorType="id" locatorValue="email"/>
+    <WebElement name="orderInput" locatorType="id" locatorValue="id_order"/>
+    <WebElement name="messageTextArea" locatorType="id" locatorValue="message"/>
+    <WebElement name="subjectHeadingDropdown" locatorType="id" locatorValue="id_contact"/>
+    <WebElement name="submitButton" locatorType="id" locatorValue="submitMessage"/>
+</Elements>
+</Page>
