@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Elements> 
+<Page name="CreateAccount">
+<Elements>
+    <WebElement name="addressAdditionalInformation" locatorType="id" locatorValue="other"/>
+    <WebElement name="addressFirstNameInput" locatorType="id" locatorValue="firstname"/>
+</Elements>
+</Page>
