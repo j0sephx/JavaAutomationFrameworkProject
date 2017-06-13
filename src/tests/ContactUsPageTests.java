@@ -23,7 +23,6 @@ public class ContactUsPageTests extends TestCase
 		WebApplication.contactUsPage.inputOrderReference(orderRef);
 		WebApplication.contactUsPage.inputMessage(message);
 		WebApplication.contactUsPage.clickSubmitButton();
-		
 	}
 	
 }

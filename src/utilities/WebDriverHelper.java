@@ -20,6 +20,7 @@ public class WebDriverHelper
 	
 	private static WebDriver driver; 
 	
+	
 	public static void assertElementIsDisplayed(ElementInfo elementInfo) throws Exception
 	{
 		driver.findElement(elementInfo.getLocator()).isDisplayed();
@@ -136,6 +137,11 @@ public class WebDriverHelper
 	public static void inputText(ElementInfo elementInfo, String text)
 	{
 		driver.findElement(elementInfo.getLocator()).sendKeys(text);
+	}
+	
+	public static Boolean isCheckboxSelected(ElementInfo elementInfo)
+	{
+		return driver.findElement(elementInfo.getLocator()).isSelected();
 	}
 	
 	public static void selectFromDropdownIndex(ElementInfo elementInfo, int index)
