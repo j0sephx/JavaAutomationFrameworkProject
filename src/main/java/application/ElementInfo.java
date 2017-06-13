@@ -33,7 +33,8 @@ public class ElementInfo
 		return locator;
 	}
 	
-	public String getLocatorValue() {
+	public String getLocatorValue() 
+	{
 		return locatorValue;
 	}
 

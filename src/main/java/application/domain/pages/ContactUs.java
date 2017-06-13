@@ -1,7 +1,7 @@
-package pages;
+package application.domain.pages;
 
 import application.ElementInfo;
-import utilities.WebDriverHelper;
+import application.common.utilities.WebDriverHelper;
 
 public class ContactUs 
 {

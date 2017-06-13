@@ -1,4 +1,4 @@
-package pageUtilities;
+package application.common.utilities;
 
 
 public abstract class Page

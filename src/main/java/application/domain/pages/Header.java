@@ -1,4 +1,4 @@
-package pages;
+package application.domain.pages;
 
 
 import application.ElementInfo;

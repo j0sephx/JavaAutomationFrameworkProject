@@ -1,13 +1,16 @@
-package application;
+package application.common.utilities;
 
 import java.util.List;
 
-public class PageCollection 
+import application.ElementInfo;
+
+
+public class PageDataTable
 {
 	private List<ElementInfo> elements;
 	private String name;
 	
-	public PageCollection(String name, List<ElementInfo> elements)
+	public PageDataTable(String name, List<ElementInfo> elements)
 	{
 		this.name = name;
 		this.elements = elements;
@@ -30,5 +33,4 @@ public class PageCollection
 	{
 		return name;
 	}
-	
 }

@@ -1,4 +1,4 @@
-package utilities;
+package application.common.utilities;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,9 +16,9 @@ import application.ElementInfo;
 
 public class WebDriverHelper 
 {
-	private static final String CHROME_PATH = System.getProperty("user.dir") + "//resources//drivers//chromedriver.exe";
-	private static final String FIREFOX_PATH = System.getProperty("user.dir") + "//resources//drivers//geckodriver.exe";
-	private static final String IE_PATH = System.getProperty("user.dir") + "//resources//drivers//IEDriverServer.exe";
+	private static final String CHROME_PATH = System.getProperty("user.dir") + "//drivers//chromedriver.exe";
+	private static final String FIREFOX_PATH = System.getProperty("user.dir") + "//drivers//geckodriver.exe";
+	private static final String IE_PATH = System.getProperty("user.dir") + "//drivers//IEDriverServer.exe";
 	
 	private static WebDriver driver; 
 	

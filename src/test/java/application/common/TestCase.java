@@ -1,18 +1,19 @@
-package tests.common;
+package application.common;
 
 import org.junit.After;
 import org.junit.Before;
 
 import application.WebApplication;
-import pageUtilities.PageDataManager;
-import utilities.WebDriverHelper;
+import application.common.utilities.PageDataManager;
+import application.common.utilities.WebDriverHelper;
 
 public class TestCase
 {
 	@Before
 	public void testSetup()
 	{
-		PageDataManager.loadAllPagesForProject(System.getProperty("user.dir") + "\\resources\\pageData");
+		final String pageDataLocation= System.getProperty("user.dir") + "\\src\\main\\resources\\pageData";
+		PageDataManager.loadAllPagesForProject(pageDataLocation);
 		WebApplication.buildPages();
 		WebDriverHelper.createDriver("CHROME");
 		WebDriverHelper.getURL("http://automationpractice.com/index.php");

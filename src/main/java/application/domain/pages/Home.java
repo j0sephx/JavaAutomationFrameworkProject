@@ -1,9 +1,9 @@
-package pages;
+package application.domain.pages;
 
 
 import application.ElementInfo;
-import pageUtilities.PageDataManager;
-import utilities.WebDriverHelper;
+import application.common.utilities.PageDataManager;
+import application.common.utilities.WebDriverHelper;
 
 public class Home 
 {

@@ -1,4 +1,4 @@
-package pageUtilities;
+package application.common.utilities;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,7 +32,7 @@ public class PageDataManager
 		ElementInfo elementInfo = null;
 		elementInfo = getPageTable(pageName).getElement(elementName);
 		
-		ElementInfo elementInfoCopy = new ElementInfo(elementInfo.getName(), elementInfo.getType(), elementInfo.getLocator().toString());
+		ElementInfo elementInfoCopy = new ElementInfo(elementInfo.getName(), elementInfo.getType(), elementInfo.getLocatorValue());
 		
 		return elementInfoCopy;	
 	}

@@ -1,10 +1,10 @@
 package application;
 
-import pages.ContactUs;
-import pages.CreateAccount;
-import pages.Header;
-import pages.Home;
-import pages.SignIn;
+import application.domain.pages.ContactUs;
+import application.domain.pages.CreateAccount;
+import application.domain.pages.Header;
+import application.domain.pages.Home;
+import application.domain.pages.SignIn;
 
 public class WebApplication 
 {

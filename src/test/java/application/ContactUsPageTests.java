@@ -1,12 +1,11 @@
-package tests;
+package application;
 
 import java.io.IOException;
 
 import org.junit.Test;
 import org.xml.sax.SAXException;
 
-import application.WebApplication;
-import tests.common.TestCase;
+import application.common.TestCase;
 
 
 

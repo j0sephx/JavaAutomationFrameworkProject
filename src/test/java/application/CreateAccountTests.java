@@ -1,10 +1,9 @@
-package tests;
+package application;
 
 import org.junit.Test;
 
-import application.WebApplication;
-import tests.common.TestCase;
-import utilities.WebDriverHelper;
+import application.common.TestCase;
+import application.common.utilities.WebDriverHelper;
 
 public class CreateAccountTests extends TestCase
 {		
