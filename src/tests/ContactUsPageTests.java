@@ -5,7 +5,6 @@ import java.io.IOException;
 import org.junit.Test;
 import org.xml.sax.SAXException;
 
-import application.PageDataManager;
 import application.WebApplication;
 import tests.common.TestCase;
 

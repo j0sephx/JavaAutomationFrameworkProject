@@ -59,13 +59,12 @@ public class PageDataManager
 	 * 
 	 * @param projectName
 	 */
-	public static void loadProject(String projectName)
+	public static void loadAllPagesForProject(String projectFilepath)
 	{
 		if (pages == null)
 		{
 			pages = new ArrayList<PageDataTable>();			
-	
-			String projectFilepath = System.getProperty("user.dir") + "\\resources\\pageData";
+
 			System.out.println("Loading project... :" + projectFilepath);
 			
 			loadPages(projectFilepath);
