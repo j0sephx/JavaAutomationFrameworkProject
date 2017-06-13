@@ -8,7 +8,12 @@ import pages.SignIn;
 
 public class WebApplication 
 {
-	//test
+	public static ContactUs	contactUsPage;
+	public static CreateAccount createAccountPage;
+	public static Header header;
+	public static Home homePage;
+	public static SignIn signInPage;
+	
 	public static void buildPages()
 	{
 		contactUsPage = new ContactUs();
@@ -17,10 +22,4 @@ public class WebApplication
 		homePage = new Home();
 		signInPage = new SignIn();
 	}
-
-	public static ContactUs	contactUsPage;
-	public static CreateAccount createAccountPage;
-	public static Header header;
-	public static Home homePage;
-	public static SignIn signInPage;
 }

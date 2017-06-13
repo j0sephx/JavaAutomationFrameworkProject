@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Elements> 
 <Elements>
-    <WebElement name="contactUsButton" locatorType="id" locatorText="contact-link"/>
-    <WebElement name="hello" locatorType="id" locatorText="hello"/>
-    <WebElement name="one" locatorType="id" locatorText="1"/>
+    <WebElement name="contactUsButton" locatorType="id" locatorValue="contact-link"/>
 </Elements>
