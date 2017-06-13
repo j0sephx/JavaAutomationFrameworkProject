@@ -5,16 +5,23 @@ import org.openqa.selenium.By;
 public class ElementInfo
 {
 	private String name;
+	private String locatorValue;
+	private String locatorType;
 	private By locator;
-	private String type;
 
 	public ElementInfo(String name, String locatorType, String locatorValue)
 	{
 		this.name = name;
-		this.type = locatorType;
-		this.locator = buildLocator(locatorValue, locatorType);
+		this.locatorType = locatorType;
+		this.locatorValue = locatorValue;
+		
+		buildLocator();
 	}
 	
+	public String getLocatorType() 
+	{
+		return locatorType;
+	}
 	
 	public String getName()
 	{
@@ -25,46 +32,56 @@ public class ElementInfo
 	{
 		return locator;
 	}
+	
+	public String getLocatorValue() {
+		return locatorValue;
+	}
 
 	/**
 	 * @return the type
 	 */
 	public String getType()
 	{
-		return type;
+		return locatorType;
 	}
-	public By buildLocator(String locatorValue, String locatorType)
-
+	
+	public By buildLocator(ElementInfo elementInfo)
 	{
 		By locator = null;
-
+		String locatorType = elementInfo.getLocatorType().toLowerCase();
+		
 		switch (locatorType)
 		{
 		case "id":
-			locator = By.id(locatorValue);
+			locator = By.id(elementInfo.getLocatorValue());
 			break;
 		case "name":
-			locator = By.name(locatorValue);
+			locator = By.name(elementInfo.getLocatorValue());
 			break;
 		case "cssSelector":
-			locator = By.cssSelector(locatorValue);
+			locator = By.cssSelector(elementInfo.getLocatorValue());
 			break;
 		case "linkText":
-			locator = By.linkText(locatorValue);
+			locator = By.linkText(elementInfo.getLocatorValue());
 			break;
 		case "partialLinkText":
-			locator = By.partialLinkText(locatorValue);
+			locator = By.partialLinkText(elementInfo.getLocatorValue());
 			break;
 		case "tagName":
-			locator = By.tagName(locatorValue);
+			locator = By.tagName(elementInfo.getLocatorValue());
 			break;
 		case "xpath":
-			locator = By.xpath(locatorValue);
+			locator = By.xpath(elementInfo.getLocatorValue());
 			break;
 		default:
 			throw new RuntimeException("Invalid Locator Type");
 		}
 
 		return locator;
+	}
+	
+	private void buildLocator() 
+	{
+		locator = buildLocator(this);
 	}
 }
