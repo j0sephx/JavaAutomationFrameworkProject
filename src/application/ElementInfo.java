@@ -7,11 +7,11 @@ public class ElementInfo
        private String name;
        private By locator;
 
-       public ElementInfo(String name, String locatorType, String locatorText)
+       public ElementInfo(String name, String locatorType, String locatorValue)
        {
             this.name = name;
             
-            locator = buildLocator(locatorText , locatorType);
+            locator = buildLocator(locatorValue , locatorType);
        }
        
        public String getName()
@@ -24,32 +24,32 @@ public class ElementInfo
     	   return locator;
        }
 
-       public By buildLocator(String locatorText, String locatorType)
+       public By buildLocator(String locatorValue, String locatorType)
        {
     	   By locator = null;
     	   
     	   switch (locatorType)
     	   {
     	   		case "id":
-					locator = By.id(locatorText);
+					locator = By.id(locatorValue);
 					break;
     	   		case "name":
-					locator = By.name(locatorText);
+					locator = By.name(locatorValue);
 				    break;
  				case "cssSelector":
-					locator = By.cssSelector(locatorText);
+					locator = By.cssSelector(locatorValue);
 					break;                          
  				case "linkText":
-					locator = By.linkText(locatorText);
+					locator = By.linkText(locatorValue);
 					break;
  				case "partialLinkText":
-	 				locator = By.partialLinkText(locatorText);
+	 				locator = By.partialLinkText(locatorValue);
      				break;  
  				case "tagName":
-	 				locator = By.tagName(locatorText);
+	 				locator = By.tagName(locatorValue);
 	 				break;
  				case "xpath":
- 					locator = By.xpath(locatorText);
+ 					locator = By.xpath(locatorValue);
  					break;
  				default:
  					throw new RuntimeException("Invalid Locator Type");
