@@ -2,10 +2,10 @@
 <!DOCTYPE Elements> 
 <Page name="SignIn">
 <Elements>
-    <WebElement name="createEmail" locatorType="id" locatorValue="email_create"/>
-    <WebElement name="createAnAccountButton" locatorType="id" locatorValue="SubmitCreate"/>
-    <WebElement name="loginEmail" locatorType="id" locatorValue="email"/>
-    <WebElement name="enterPassword" locatorType="id" locatorValue="email"/>
-    <WebElement name="loginButton" locatorType="id" locatorValue="email"/>
+    <Element name="createEmail" locatorType="id" locatorValue="email_create"/>
+    <Element name="createAnAccountButton" locatorType="id" locatorValue="SubmitCreate"/>
+    <Element name="loginEmail" locatorType="id" locatorValue="email"/>
+    <Element name="enterPassword" locatorType="id" locatorValue="email"/>
+    <Element name="loginButton" locatorType="id" locatorValue="email"/>
 </Elements>
 </Page>

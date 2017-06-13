@@ -14,7 +14,8 @@ public class ElementInfo
 
 		locator = buildLocator(locatorValue, locatorType);
 	}
-
+	
+	
 	public String getName()
 	{
 		return name;

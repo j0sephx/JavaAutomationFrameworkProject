@@ -2,9 +2,9 @@
 <!DOCTYPE Elements> 
 <Page name="Home">
 <Elements>
-    <WebElement name="contactUsButton" locatorType="id" locatorValue="contact-link"/>
-    <WebElement name="searchBar" locatorType="id" locatorValue="search_query_top"/>
-    <WebElement name="searchBtn" locatorType="xpath" locatorValue="//button[@name='submit_search']"/>
-    <WebElement name="signInButton" locatorType="xpath" locatorValue="//div[@class='header_user_info']"/>
+    <Element name="contactUsButton" locatorType="id" locatorValue="contact-link"/>
+    <Element name="searchBar" locatorType="id" locatorValue="search_query_top"/>
+    <Element name="searchBtn" locatorType="xpath" locatorValue="//button[@name='submit_search']"/>
+    <Element name="signInButton" locatorType="xpath" locatorValue="//div[@class='header_user_info']"/>
 </Elements>
 </Page>
