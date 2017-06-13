@@ -46,5 +46,13 @@ public class Home
 	private void buildPage()
 	{
 		//ElementInfo contactUsButton = PageDataManager.loadFile(System.getProperty("user.dir") + "//resources//pageData//home.xml", "contactUsButton");
+		contactUsButton = new ElementInfo("contactUsButton","id","contact-link");
+		searchBar = new ElementInfo("searchBar","id","search_query_top");
+		searchBtn = new ElementInfo("searchBtn","xpath","//button[@name='submit_search']");
+		signInButton = new ElementInfo("signInButton","xpath","//div[@class='header_user_info']");
+	
 	}	
+	
+	
+	
 }
