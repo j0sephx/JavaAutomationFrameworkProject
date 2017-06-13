@@ -88,9 +88,8 @@ public class PageDataManager
 			
 			String name = elementNode.getAttribute("name");
 			String locatorType = elementNode.getAttribute("locatorType");
-			String locatorValue = elementNode.getAttribute("locatorValue");						
-			
-			ElementInfo elementInfo = new ElementInfo(name, locatorValue, locatorType);
+			String locatorValue = elementNode.getAttribute("locatorValue");									
+			ElementInfo elementInfo = new ElementInfo(name, locatorType, locatorValue);
 			elements.add(elementInfo);			
 		}
 		

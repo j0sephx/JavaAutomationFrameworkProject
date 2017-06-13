@@ -33,8 +33,8 @@ public class ElementInfo
 	{
 		return type;
 	}
-
 	public By buildLocator(String locatorValue, String locatorType)
+
 	{
 		By locator = null;
 
