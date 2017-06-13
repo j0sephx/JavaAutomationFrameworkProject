@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Elements> 
+<Page name="Header">
+<Elements>
+    <WebElement name="womenHeader" locatorType="xpath" locatorValue="//div[@id='block_top_menu']//a[@title='Women']"/>
+    <WebElement name="headerSubMenuTshirts" locatorType="xpath" locatorValue="headerSubMenuTshirts","xpath","//ul[@class='submenu-container clearfix first-in-line-xs']//ul//li//a[@title='T-shirts']"/>
+</Elements>
+</Page>

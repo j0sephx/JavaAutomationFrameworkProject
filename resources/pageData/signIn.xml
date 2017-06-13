@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Elements> 
+<Page name="SignIn">
+<Elements>
+    <WebElement name="createEmail" locatorType="id" locatorValue="email_create"/>
+    <WebElement name="createAnAccountButton" locatorType="id" locatorValue="SubmitCreate"/>
+    <WebElement name="loginEmail" locatorType="id" locatorValue="email"/>
+    <WebElement name="enterPassword" locatorType="id" locatorValue="email"/>
+    <WebElement name="loginButton" locatorType="id" locatorValue="email"/>
+</Elements>
+</Page>
