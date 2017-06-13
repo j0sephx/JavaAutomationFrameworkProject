@@ -2,6 +2,8 @@ package pageUtilities;
 
 import java.util.List;
 
+import application.ElementInfo;
+
 
 public class PageDataTable
 {
@@ -24,9 +26,7 @@ public class PageDataTable
 			}
 		}
 
-		AutomationFrameworkException exception = new AutomationFrameworkException(String.format("Element '%1$s' could not be found in '%2$s.xml'", elementName, name));
-		
-		throw exception;
+		return null;
 	}
 	
 	public String getName()

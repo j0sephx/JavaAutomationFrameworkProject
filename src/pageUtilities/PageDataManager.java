@@ -9,14 +9,17 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.apache.commons.io.FilenameUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import application.ElementInfo;
+
 public class PageDataManager 
 {
-private static List<PageDataTable> pages;
+	private static List<PageDataTable> pages;
 	
 	/**
 	 * 
@@ -29,9 +32,7 @@ private static List<PageDataTable> pages;
 		ElementInfo elementInfo = null;
 		elementInfo = getPageTable(pageName).getElement(elementName);
 		
-		ElementInfo elementInfoCopy = new ElementInfo(elementInfo.getName(),
-													  elementInfo.getLocatorText(), 
-													  elementInfo.getLocatorType();
+		ElementInfo elementInfoCopy = new ElementInfo(elementInfo.getName(), elementInfo.getType(), elementInfo.getLocator().toString());
 		
 		return elementInfoCopy;	
 	}
@@ -51,9 +52,7 @@ private static List<PageDataTable> pages;
 			}
 		}
 		
-		AutomationFrameworkException afe = new AutomationFrameworkException(String.format("Page '%1$s' could not be found", pageName));
-		
-		throw afe;
+		return null;
 	}
 	
 	/**
@@ -65,9 +64,8 @@ private static List<PageDataTable> pages;
 		if (pages == null)
 		{
 			pages = new ArrayList<PageDataTable>();			
-			
-			//String projectFilepath = System.getProperty("user.dir") + "\\Projects\\" + projectName + "\\Pages";	
-			String projectFilepath = System.getProperty("user.dir") + "\\src\\test\\resources\\Application\\Pages";
+	
+			String projectFilepath = System.getProperty("user.dir") + "\\resources\\pageData";
 			System.out.println("Loading project... :" + projectFilepath);
 			
 			loadPages(projectFilepath);
@@ -91,10 +89,9 @@ private static List<PageDataTable> pages;
 			
 			String name = elementNode.getAttribute("name");
 			String locatorType = elementNode.getAttribute("locatorType");
-			String locatorValue = elementNode.getAttribute("locatorValue");
-			String frame = elementNode.getAttribute("frame");												
+			String locatorValue = elementNode.getAttribute("locatorValue");						
 			
-			ElementInfo elementInfo = new ElementInfo(name, locatorValue, locatorType, frame);
+			ElementInfo elementInfo = new ElementInfo(name, locatorValue, locatorType);
 			elements.add(elementInfo);			
 		}
 		
