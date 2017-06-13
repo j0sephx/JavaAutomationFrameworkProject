@@ -54,9 +54,9 @@ public class CreateAccountTests extends TestCase
 		Thread.sleep(10000);
 	}
 	
-	@Test
-	public void thisWillSoonBeATest()	
-	{
-		//System.out.println("Navigated to test website");
-	}
+//	@Test
+//	public void thisWillSoonBeATest()	
+//	{
+//		//System.out.println("Navigated to test website");
+//	}
 }

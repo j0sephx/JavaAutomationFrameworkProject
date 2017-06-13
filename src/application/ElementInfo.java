@@ -11,8 +11,8 @@ public class ElementInfo
 	public ElementInfo(String name, String locatorType, String locatorValue)
 	{
 		this.name = name;
-
-		locator = buildLocator(locatorValue, locatorType);
+		this.type = locatorType;
+		this.locator = buildLocator(locatorValue, locatorType);
 	}
 	
 	

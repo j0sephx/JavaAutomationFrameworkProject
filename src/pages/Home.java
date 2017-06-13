@@ -8,6 +8,7 @@ import utilities.WebDriverHelper;
 public class Home 
 {
 	private static final String PAGE_NAME = "Home";
+	
 	public ElementInfo contactUsButton;
 	public ElementInfo searchBar;
 	public ElementInfo searchBtn;
@@ -48,6 +49,9 @@ public class Home
 	private void buildPage()
 	{
 		contactUsButton = PageDataManager.findElement("contactUsButton", PAGE_NAME);
+		searchBar = PageDataManager.findElement("searchBar", PAGE_NAME);
+		searchBtn = PageDataManager.findElement("searchBtn", PAGE_NAME);
+		signInButton = PageDataManager.findElement("signInButton", PAGE_NAME);
 	}	
 	
 	
