@@ -2,10 +2,12 @@ package pages;
 
 
 import application.ElementInfo;
+import pageUtilities.PageDataManager;
 import utilities.WebDriverHelper;
 
 public class Home 
 {
+	private static final String PAGE_NAME = "Home";
 	public ElementInfo contactUsButton;
 	public ElementInfo searchBar;
 	public ElementInfo searchBtn;
@@ -45,6 +47,6 @@ public class Home
 	
 	private void buildPage()
 	{
-		//ElementInfo contactUsButton = PageDataManager.loadFile(System.getProperty("user.dir") + "//resources//pageData//home.xml", "contactUsButton");
+		contactUsButton = PageDataManager.findElement("contactUsButton", PAGE_NAME);
 	}	
 }
