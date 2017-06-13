@@ -8,6 +8,7 @@ import pages.SignIn;
 
 public class WebApplication 
 {
+	//test
 	public static void buildPages()
 	{
 		contactUsPage = new ContactUs();
