@@ -9,6 +9,7 @@ public class ContactUs
 	private static final String PAGE_NAME = "ContactUs";
 	
 	public ElementInfo inputEmail;
+	public ElementInfo messageSentSuccess;
 	public ElementInfo messageTextArea;
 	public ElementInfo orderInput;
 	public ElementInfo subjectHeadingDropdown;
@@ -47,6 +48,7 @@ public class ContactUs
 	private void buildPage()
 	{
 		inputEmail  = PageDataManager.findElement("inputEmail", PAGE_NAME);
+		messageSentSuccess  = PageDataManager.findElement("messageSentSuccess", PAGE_NAME);
 		messageTextArea  = PageDataManager.findElement("messageTextArea", PAGE_NAME);
 		orderInput  = PageDataManager.findElement("orderInput", PAGE_NAME);
 		subjectHeadingDropdown  = PageDataManager.findElement("subjectHeadingDropdown", PAGE_NAME);

@@ -3,27 +3,33 @@ package application;
 import org.junit.Test;
 
 import application.common.TestCase;
+import application.common.utilities.AssertionHelper;
+import application.common.utilities.WebDriverHelper;
 
 
 
 
 public class ContactUsPageTests extends TestCase
 {	
-
 	@Test
 	public void navigateToContactUsAndSendRequest()
 	{
 		String subject = "Customer service";
 		String email = "test@test.com";
 		String orderRef = "TestOrder123";
-		String message = "Test Message";
+		String messageInput = "Test Message";
+		String messageSuccess = "Your message has been successfully sent to our team.";
 		
 		WebApplication.homePage.clickContactUsButton();
 		WebApplication.contactUsPage.selectSubjectHeading(subject);
 		WebApplication.contactUsPage.inputEmail(email);
 		WebApplication.contactUsPage.inputOrderReference(orderRef);
-		WebApplication.contactUsPage.inputMessage(message);
+		WebApplication.contactUsPage.inputMessage(messageInput);
 		WebApplication.contactUsPage.clickSubmitButton();
+		
+		WebDriverHelper.assertElementTextContains(WebApplication.contactUsPage.messageSentSuccess, messageSuccess);
+		AssertionHelper.contains(messageSuccess,messageSuccess);
 	}
+	
 	
 }
