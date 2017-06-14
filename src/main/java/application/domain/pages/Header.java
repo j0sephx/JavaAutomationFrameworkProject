@@ -18,7 +18,7 @@ public class Header
 	
 	private void buildPage()
 	{
-		womenHeader  = PageDataManager.findElement("contactUsButton", PAGE_NAME);
+		womenHeader  = PageDataManager.findElement("womenHeader", PAGE_NAME);
 		headerSubMenuTshirts = PageDataManager.findElement("headerSubMenuTshirts", PAGE_NAME);
 	}
 }

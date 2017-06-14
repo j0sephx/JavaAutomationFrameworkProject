@@ -4,5 +4,25 @@
 <Elements>
     <Element name="addressAdditionalInformation" locatorType="id" locatorValue="other"/>
     <Element name="addressFirstNameInput" locatorType="id" locatorValue="firstname"/>
+    <Element name="addressLineOneInput" locatorType="id" locatorValue="address1"/>
+    <Element name="addressLineTwoInput" locatorType="id" locatorValue="address2"/>
+    <Element name="addressCityInput" locatorType="id" locatorValue="city"/>
+    <Element name="addressCountryDropdown" locatorType="id" locatorValue="id_country"/>
+    <Element name="addressCompanyInput" locatorType="id" locatorValue="company"/>
+    <Element name="addressMobilePhoneInput" locatorType="id" locatorValue="phone_mobile"/>
+    <Element name="addressNameInput" locatorType="id" locatorValue="alias"/>
+    <Element name="addressPhoneInput" locatorType="id" locatorValue="phone"/>
+    <Element name="addressPostcodeInput" locatorType="id" locatorValue="postcode"/>
+	<Element name="addressSurnameInput" locatorType="id" locatorValue="lastname"/>
+	<Element name="addressStateDropdown" locatorType="id" locatorValue="id_state"/>
+    <Element name="daysDropdown" locatorType="id" locatorValue="days"/>
+    <Element name="firstNameInput" locatorType="id" locatorValue="customer_firstname"/>
+    <Element name="monthsDropdown" locatorType="id" locatorValue="months"/>
+    <Element name="mrRadioBtn" locatorType="id" locatorValue="id_gender1"/>
+    <Element name="mrsRadioBtn" locatorType="id" locatorValue="id_gender2"/>
+    <Element name="passwordInput" locatorType="id" locatorValue="passwd"/>
+    <Element name="registerAccountBtn" locatorType="id" locatorValue="submitAccount"/>
+    <Element name="surnameInput" locatorType="id" locatorValue="customer_lastname"/>
+    <Element name="yearsDropdown" locatorType="id" locatorValue="years"/>  
 </Elements>
 </Page>
