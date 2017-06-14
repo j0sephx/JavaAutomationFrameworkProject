@@ -32,6 +32,11 @@ public class PageDataManager
 		ElementInfo elementInfo = null;
 		elementInfo = getPageTable(pageName).getElement(elementName);
 		
+		if (elementInfo == null)
+		{
+			throw new RuntimeException("Page & Element name not found: Page" + pageName + " Element: " + elementName);
+		}
+		
 		ElementInfo elementInfoCopy = new ElementInfo(elementInfo.getName(), elementInfo.getType(), elementInfo.getLocatorValue());
 		
 		return elementInfoCopy;	
@@ -52,7 +57,7 @@ public class PageDataManager
 			}
 		}
 		
-		return null;
+		throw new RuntimeException("Page name not found: " + pageName);
 	}
 	
 	/**

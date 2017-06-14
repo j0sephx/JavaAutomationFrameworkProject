@@ -45,27 +45,27 @@ public class CreateAccount
 	private void buildPage()
 	{	
 		
-		addressAdditionalInformation = PageDataManager.findElement("addressAdditionalInformation", PAGE_NAME);
-		addressFirstNameInput = PageDataManager.findElement("addressFirstNameInput", PAGE_NAME);
-		addressLineOneInput = PageDataManager.findElement("addressLineOneInput", PAGE_NAME);
-		addressLineTwoInput = PageDataManager.findElement("addressLineTwoInput", PAGE_NAME);
-		addressSurnameInput = PageDataManager.findElement("addressSurnameInput", PAGE_NAME);
-		addressCityInput	= PageDataManager.findElement("addressCityInput", PAGE_NAME);
-		addressCountryDropdown = PageDataManager.findElement("addressCountryDropdown", PAGE_NAME);
-		addressCompanyInput = PageDataManager.findElement("addressCompanyInput", PAGE_NAME);
-		addressMobilePhoneInput = PageDataManager.findElement("addressMobilePhoneInput", PAGE_NAME);
-		addressNameInput = PageDataManager.findElement("addressNameInput", PAGE_NAME);
-		addressPhoneInput = PageDataManager.findElement("addressPhoneInput", PAGE_NAME);
-		addressPostcodeInput = PageDataManager.findElement("addressPostcodeInput", PAGE_NAME);
-		addressStateDropdown = PageDataManager.findElement("addressStateDropdown", PAGE_NAME);
-		daysDropdown = PageDataManager.findElement("daysDropdown", PAGE_NAME);
-		firstNameInput = PageDataManager.findElement("firstNameInput", PAGE_NAME);
-		monthsDropdown = PageDataManager.findElement("monthsDropdown", PAGE_NAME);
-		mrRadioBtn = PageDataManager.findElement("mrRadioBtn", PAGE_NAME);
-		mrsRadioBtn = PageDataManager.findElement("mrsRadioBtn", PAGE_NAME);
-		passwordInput = PageDataManager.findElement("passwordInput", PAGE_NAME);
-		registerAccountBtn = PageDataManager.findElement("registerAccountBtn", PAGE_NAME);
-		surnameInput = PageDataManager.findElement("surnameInput", PAGE_NAME);
-		yearsDropdown = PageDataManager.findElement("yearsDropdown", PAGE_NAME);
+//		addressAdditionalInformation = PageDataManager.findElement("addressAdditionalInformation", PAGE_NAME);
+//		addressFirstNameInput = PageDataManager.findElement("addressFirstNameInput", PAGE_NAME);
+//		addressLineOneInput = PageDataManager.findElement("addressLineOneInput", PAGE_NAME);
+//		addressLineTwoInput = PageDataManager.findElement("addressLineTwoInput", PAGE_NAME);
+//		addressSurnameInput = PageDataManager.findElement("addressSurnameInput", PAGE_NAME);
+//		addressCityInput	= PageDataManager.findElement("addressCityInput", PAGE_NAME);
+//		addressCountryDropdown = PageDataManager.findElement("addressCountryDropdown", PAGE_NAME);
+//		addressCompanyInput = PageDataManager.findElement("addressCompanyInput", PAGE_NAME);
+//		addressMobilePhoneInput = PageDataManager.findElement("addressMobilePhoneInput", PAGE_NAME);
+//		addressNameInput = PageDataManager.findElement("addressNameInput", PAGE_NAME);
+//		addressPhoneInput = PageDataManager.findElement("addressPhoneInput", PAGE_NAME);
+//		addressPostcodeInput = PageDataManager.findElement("addressPostcodeInput", PAGE_NAME);
+//		addressStateDropdown = PageDataManager.findElement("addressStateDropdown", PAGE_NAME);
+//		daysDropdown = PageDataManager.findElement("daysDropdown", PAGE_NAME);
+//		firstNameInput = PageDataManager.findElement("firstNameInput", PAGE_NAME);
+//		monthsDropdown = PageDataManager.findElement("monthsDropdown", PAGE_NAME);
+//		mrRadioBtn = PageDataManager.findElement("mrRadioBtn", PAGE_NAME);
+//		mrsRadioBtn = PageDataManager.findElement("mrsRadioBtn", PAGE_NAME);
+//		passwordInput = PageDataManager.findElement("passwordInput", PAGE_NAME);
+//		registerAccountBtn = PageDataManager.findElement("registerAccountBtn", PAGE_NAME);
+//		surnameInput = PageDataManager.findElement("surnameInput", PAGE_NAME);
+//		yearsDropdown = PageDataManager.findElement("yearsDropdown", PAGE_NAME);
 	}
 }
