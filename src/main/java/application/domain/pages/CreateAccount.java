@@ -1,10 +1,13 @@
 package application.domain.pages;
 
 import application.ElementInfo;
+import application.common.utilities.PageDataManager;
 import application.common.utilities.WebDriverHelper;
 
 public class CreateAccount 
 {
+	private static final String PAGE_NAME = "CreateAccount";
+	
 	public ElementInfo addressAdditionalInformation;
 	public ElementInfo addressFirstNameInput;
 	public ElementInfo addressLineOneInput;
@@ -41,27 +44,28 @@ public class CreateAccount
 	
 	private void buildPage()
 	{	
-		addressAdditionalInformation = new ElementInfo("addressAdditionalInformation","id","other");
-		addressFirstNameInput = new ElementInfo("addressFirstNameInput","id","firstname");
-		addressLineOneInput = new ElementInfo("addressLineOneInput","id","address1");
-		addressLineTwoInput = new ElementInfo("addressLineTwoInput","id","address2");
-		addressSurnameInput = new ElementInfo("addressSurnameInput","id","lastname");
-		addressCityInput	= new ElementInfo("addressCityInput","id","city");
-		addressCountryDropdown = new ElementInfo("addressCountryDropdown","id","id_country");
-		addressCompanyInput = new ElementInfo("addressCompanyInput","id","company");
-		addressMobilePhoneInput = new ElementInfo("addressMobilePhoneInput","id","phone_mobile");
-		addressNameInput = new ElementInfo("addressNameInput","id","alias");
-		addressPhoneInput = new ElementInfo("addressPhoneInput","id","phone");
-		addressPostcodeInput = new ElementInfo("addressPostcodeInput","id","postcode");
-		addressStateDropdown = new ElementInfo("addressStateDropdown","id","id_state");
-		daysDropdown = new ElementInfo("daysDropdown","id","days");
-		firstNameInput = new ElementInfo("firstNameInput","id","customer_firstname");
-		monthsDropdown = new ElementInfo("monthsDropdown","id","months");
-		mrRadioBtn = new ElementInfo("mrRadioBtn","xpath","//input[@id='id_gender1']");
-		mrsRadioBtn = new ElementInfo("mrsRadioBtn","xpath","//input[@id='id_gender2']");
-		passwordInput = new ElementInfo("passwordInput","xpath","//input[@id='passwd']");
-		registerAccountBtn = new ElementInfo("registerAccountBtn","id","submitAccount");
-		surnameInput = new ElementInfo("surnameInput","id","customer_lastname");
-		yearsDropdown = new ElementInfo("yearsDropdown","id","years");
+		
+		addressAdditionalInformation = PageDataManager.findElement("addressAdditionalInformation", PAGE_NAME);
+		addressFirstNameInput = PageDataManager.findElement("addressFirstNameInput", PAGE_NAME);
+		addressLineOneInput = PageDataManager.findElement("addressLineOneInput", PAGE_NAME);
+		addressLineTwoInput = PageDataManager.findElement("addressLineTwoInput", PAGE_NAME);
+		addressSurnameInput = PageDataManager.findElement("addressSurnameInput", PAGE_NAME);
+		addressCityInput	= PageDataManager.findElement("addressCityInput", PAGE_NAME);
+		addressCountryDropdown = PageDataManager.findElement("addressCountryDropdown", PAGE_NAME);
+		addressCompanyInput = PageDataManager.findElement("addressCompanyInput", PAGE_NAME);
+		addressMobilePhoneInput = PageDataManager.findElement("addressMobilePhoneInput", PAGE_NAME);
+		addressNameInput = PageDataManager.findElement("addressNameInput", PAGE_NAME);
+		addressPhoneInput = PageDataManager.findElement("addressPhoneInput", PAGE_NAME);
+		addressPostcodeInput = PageDataManager.findElement("addressPostcodeInput", PAGE_NAME);
+		addressStateDropdown = PageDataManager.findElement("addressStateDropdown", PAGE_NAME);
+		daysDropdown = PageDataManager.findElement("daysDropdown", PAGE_NAME);
+		firstNameInput = PageDataManager.findElement("firstNameInput", PAGE_NAME);
+		monthsDropdown = PageDataManager.findElement("monthsDropdown", PAGE_NAME);
+		mrRadioBtn = PageDataManager.findElement("mrRadioBtn", PAGE_NAME);
+		mrsRadioBtn = PageDataManager.findElement("mrsRadioBtn", PAGE_NAME);
+		passwordInput = PageDataManager.findElement("passwordInput", PAGE_NAME);
+		registerAccountBtn = PageDataManager.findElement("registerAccountBtn", PAGE_NAME);
+		surnameInput = PageDataManager.findElement("surnameInput", PAGE_NAME);
+		yearsDropdown = PageDataManager.findElement("yearsDropdown", PAGE_NAME);
 	}
 }

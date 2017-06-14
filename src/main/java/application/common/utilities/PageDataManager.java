@@ -126,7 +126,7 @@ public class PageDataManager
 		System.out.println("loadPages");
 		File folderPath = new File(folder);
 		File[] files = folderPath.listFiles();
-		
+		System.out.println(files[0]);
 		for (File file : files)
 		{
 			if (!FilenameUtils.isExtension(file.getName().toLowerCase(),"xml"))
@@ -135,6 +135,7 @@ public class PageDataManager
 			}
 			else
 			{
+				
 				Document pageXml = null;
 				try
 				{
@@ -148,7 +149,7 @@ public class PageDataManager
 				
 				Element pageNode = (Element) pageXml.getDocumentElement();
 				String pageName = pageNode.getAttribute("name");	
-				
+				System.out.println(pageName);
 				List<ElementInfo> elements = buildElementsList(pageXml);				
 
 				PageDataTable page = new PageDataTable(pageName, elements);				

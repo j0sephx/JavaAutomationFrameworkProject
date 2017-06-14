@@ -3,5 +3,6 @@
 <Page name="Header">
 <Elements>
     <Element name="womenHeader" locatorType="xpath" locatorValue="//div[@id='block_top_menu']//a[@title='Women']"/>
+    <Element name="headerSubMenuTshirts" locatorType="xpath" locatorValue="//ul[@class='submenu-container clearfix first-in-line-xs']//ul//li//a[@title='T-shirts']"/>
 </Elements>
 </Page>

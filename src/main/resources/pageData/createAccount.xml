@@ -2,7 +2,7 @@
 <!DOCTYPE Elements> 
 <Page name="CreateAccount">
 <Elements>
-    <WebElement name="addressAdditionalInformation" locatorType="id" locatorValue="other"/>
-    <WebElement name="addressFirstNameInput" locatorType="id" locatorValue="firstname"/>
+    <Element name="addressAdditionalInformation" locatorType="id" locatorValue="other"/>
+    <Element name="addressFirstNameInput" locatorType="id" locatorValue="firstname"/>
 </Elements>
 </Page>

@@ -2,9 +2,12 @@ package application.domain.pages;
 
 
 import application.ElementInfo;
+import application.common.utilities.PageDataManager;
 
 public class Header 
 {
+	private static final String PAGE_NAME = "Header";
+	
 	public ElementInfo womenHeader;
 	public ElementInfo headerSubMenuTshirts;
 	
@@ -15,7 +18,7 @@ public class Header
 	
 	private void buildPage()
 	{
-		womenHeader  = new ElementInfo("womenHeader","xpath","//div[@id='block_top_menu']//a[@title='Women']");
-		headerSubMenuTshirts = new ElementInfo("headerSubMenuTshirts","xpath","//ul[@class='submenu-container clearfix first-in-line-xs']//ul//li//a[@title='T-shirts']");
+		womenHeader  = PageDataManager.findElement("contactUsButton", PAGE_NAME);
+		headerSubMenuTshirts = PageDataManager.findElement("headerSubMenuTshirts", PAGE_NAME);
 	}
 }

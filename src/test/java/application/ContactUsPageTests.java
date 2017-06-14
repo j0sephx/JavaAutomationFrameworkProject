@@ -1,11 +1,9 @@
 package application;
 
-import java.io.IOException;
-
 import org.junit.Test;
-import org.xml.sax.SAXException;
 
 import application.common.TestCase;
+
 
 
 
@@ -13,7 +11,7 @@ public class ContactUsPageTests extends TestCase
 {	
 
 	@Test
-	public void navigateToContactUsAndSendRequest() throws IOException, SAXException
+	public void navigateToContactUsAndSendRequest()
 	{
 		String subject = "Customer service";
 		String email = "test@test.com";

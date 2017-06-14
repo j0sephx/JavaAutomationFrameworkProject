@@ -1,10 +1,13 @@
 package application.domain.pages;
 
 import application.ElementInfo;
+import application.common.utilities.PageDataManager;
 import application.common.utilities.WebDriverHelper;
 
 public class ContactUs 
 {
+	private static final String PAGE_NAME = "ContactUs";
+	
 	public ElementInfo inputEmail;
 	public ElementInfo messageTextArea;
 	public ElementInfo orderInput;
@@ -43,10 +46,10 @@ public class ContactUs
 		
 	private void buildPage()
 	{
-		inputEmail = new ElementInfo("inputEmail", "id", "email");
-		orderInput = new ElementInfo("orderInput","id","id_order");
-		messageTextArea = new ElementInfo("messageTextArea","id","message");
-		subjectHeadingDropdown = new ElementInfo("subjectHeadingDropdown","id","id_contact");
-		submitButton = new ElementInfo ("submitButton","id","submitMessage");
+		inputEmail  = PageDataManager.findElement("inputEmail", PAGE_NAME);
+		messageTextArea  = PageDataManager.findElement("messageTextArea", PAGE_NAME);
+		orderInput  = PageDataManager.findElement("orderInput", PAGE_NAME);
+		subjectHeadingDropdown  = PageDataManager.findElement("subjectHeadingDropdown", PAGE_NAME);
+		submitButton  = PageDataManager.findElement("submitButton", PAGE_NAME);
 	}
 } 
