@@ -104,7 +104,6 @@ public class WebDriverHelper
 		return driver.findElements(elementInfo.getLocator()).size();
 	}
 	
-	
 	public static String getElementText(ElementInfo elementInfo)
 	{
 		return driver.findElement(elementInfo.getLocator()).getText();

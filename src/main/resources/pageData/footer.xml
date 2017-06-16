@@ -4,6 +4,7 @@
 <Elements>
     <Element name="categoriesTitle" locatorType="xpath" locatorValue="//section[@class='blockcategories_footer footer-block col-xs-12 col-sm-2']//h4[text()='Categories']"/>
 	<Element name="informationSectionLinks" locatorType="xpath" locatorValue="//section[@id='block_various_links_footer']//a[@title='%1$s']"/>
+	<Element name="myAccountSectionLinks" locatorType="xpath" locatorValue="//section[@class='footer-block col-xs-12 col-sm-4']//a[@title='%1$s']"/>
 	<Element name="women" locatorType="xpath" locatorValue="//div[@class='category_footer toggle-footer']//a[contains(.,'Women')]"/>
 </Elements>
 </Page>

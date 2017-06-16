@@ -37,6 +37,16 @@ public class ElementInfo
 	{
 		return locatorValue;
 	}
+	
+	public void setLocatorValue(String locatorValue) 
+	{
+		this.locatorValue = locatorValue;
+	}
+	
+	public void setLocator(By locator) 
+	{
+		this.locator = locator;
+	}
 
 	/**
 	 * @return the type
@@ -81,7 +91,7 @@ public class ElementInfo
 		return locator;
 	}
 	
-	private void buildLocator() 
+	public void buildLocator() 
 	{
 		locator = buildLocator(this);
 	}
