@@ -1,7 +1,5 @@
 package application.domain.pages;
 
-import org.openqa.selenium.By;
-
 import application.ElementInfo;
 import application.common.utilities.PageDataManager;
 import application.common.utilities.WebDriverHelper;

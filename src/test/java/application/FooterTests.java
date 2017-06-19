@@ -8,9 +8,12 @@ public class FooterTests extends TestCase
 {
 
 	@Test
-	public void navigateToContactUsAndSendRequest()
+	public void navigateToFooterAndClickInformationLinks()
 	{
 		WebApplication.footer.clickInformationSectionLink(WebApplication.footer.informationSectionLinks, "Specials");
+		WebApplication.footer.clickInformationSectionLink(WebApplication.footer.informationSectionLinks, "New products");
+		WebApplication.footer.clickInformationSectionLink(WebApplication.footer.informationSectionLinks, "Best sellers");
+		WebApplication.footer.clickInformationSectionLink(WebApplication.footer.informationSectionLinks, "Our stores");
 	}
 	
 	
