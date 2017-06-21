@@ -1,5 +1,6 @@
 package application.domain.pages;
 
+import application.Element;
 import application.ElementInfo;
 import application.common.utilities.PageDataManager;
 import application.common.utilities.WebDriverHelper;
@@ -8,12 +9,12 @@ public class ContactUs
 {
 	private static final String PAGE_NAME = "ContactUs";
 	
-	public ElementInfo inputEmail;
-	public ElementInfo messageSentSuccess;
-	public ElementInfo messageTextArea;
-	public ElementInfo orderInput;
-	public ElementInfo subjectHeadingDropdown;
-	public ElementInfo submitButton;
+	public Element inputEmail;
+	public Element messageSentSuccess;
+	public Element messageTextArea;
+	public Element orderInput;
+	public Element subjectHeadingDropdown;
+	public Element submitButton;
 	
 	public ContactUs()
 	{
@@ -22,36 +23,36 @@ public class ContactUs
 	
 	public void clickSubmitButton()
 	{
-		WebDriverHelper.click(submitButton);
+		submitButton.click();
 	}
 	
 	public void inputEmail(String email)
 	{
-		WebDriverHelper.inputText(inputEmail, email);
+		inputEmail.inputText(email);
 	}
 	
 	public void inputMessage(String text)
 	{
-		WebDriverHelper.inputText(messageTextArea, text);
+		messageTextArea.inputText(text);
 	}
 	
 	public void inputOrderReference(String order)
 	{
-		WebDriverHelper.inputText(orderInput, order);
+		orderInput.inputText(order);
 	}
 	
 	public void selectSubjectHeading(String subject)
 	{
-		WebDriverHelper.selectFromDropdownText(subjectHeadingDropdown, subject);
+		subjectHeadingDropdown.selectFromDropdownText(subject);
 	}
 		
 	private void buildPage()
 	{
-		inputEmail  = PageDataManager.findElement("inputEmail", PAGE_NAME);
-		messageSentSuccess  = PageDataManager.findElement("messageSentSuccess", PAGE_NAME);
-		messageTextArea  = PageDataManager.findElement("messageTextArea", PAGE_NAME);
-		orderInput  = PageDataManager.findElement("orderInput", PAGE_NAME);
-		subjectHeadingDropdown  = PageDataManager.findElement("subjectHeadingDropdown", PAGE_NAME);
-		submitButton  = PageDataManager.findElement("submitButton", PAGE_NAME);
+		inputEmail  = new Element("inputEmail", PAGE_NAME);
+		messageSentSuccess  = new Element("messageSentSuccess", PAGE_NAME);
+		messageTextArea  = new Element("messageTextArea", PAGE_NAME);
+		orderInput  = new Element("orderInput", PAGE_NAME);
+		subjectHeadingDropdown  = new Element("subjectHeadingDropdown", PAGE_NAME);
+		submitButton  = new Element("submitButton", PAGE_NAME);
 	}
 } 

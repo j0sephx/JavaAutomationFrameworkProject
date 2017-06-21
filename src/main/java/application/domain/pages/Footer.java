@@ -1,5 +1,6 @@
 package application.domain.pages;
 
+import application.Element;
 import application.ElementInfo;
 import application.common.utilities.PageDataManager;
 import application.common.utilities.WebDriverHelper;
@@ -8,24 +9,21 @@ public class Footer
 {
 	private static final String PAGE_NAME = "Footer";
 	
-	public ElementInfo categoriesTitle;
-	public ElementInfo informationSectionLinks;
-	public ElementInfo myAccountSectionLinks;
-	public ElementInfo women;
-	
-	
+	public Element categoriesTitle;
+	public Element informationSectionLinks;
+	public Element myAccountSectionLinks;
+	public Element women;
 	
 	public Footer()
 	{
 		buildPage();
 	}
 	
-	public void clickInformationSectionLink(ElementInfo elementInfo, String title)
+	public void clickInformationSectionLink(String title)
 	{
 		String locator = returnInformationSectionLinks(elementInfo.getLocatorValue(), title);
-		elementInfo.setLocatorValue(locator);
-		elementInfo.buildLocator();
-		WebDriverHelper.click(elementInfo);
+		informationSectionLinks.click(elementInfo);
+		
 	}
 	
 	public String returnInformationSectionLinks(String locatorValue, String informationSectionLinks)
@@ -35,10 +33,17 @@ public class Footer
 	
 	private void buildPage()
 	{
-		categoriesTitle  = PageDataManager.findElement("categoriesTitle", PAGE_NAME);
-		informationSectionLinks = PageDataManager.findElement("informationSectionLinks", PAGE_NAME);
-		myAccountSectionLinks = PageDataManager.findElement("myAccountSectionLinks", PAGE_NAME);
-		women  = PageDataManager.findElement("women", PAGE_NAME);
+		categoriesTitle  = new Element("categoriesTitle", PAGE_NAME);
+		informationSectionLinks = new Element("informationSectionLinks", PAGE_NAME);  
+		myAccountSectionLinks  = new Element("myAccountSectionLinks", PAGE_NAME);   
+		women   = new Element("women", PAGE_NAME); 
+	}
+	
+	private void clickElement(String locator)
+	{
+		WebDriverHelper.getDriver().findElement(arg0)
+		
+		return getDriver().findElement(By.xpath(locator));
 	}
 }
 

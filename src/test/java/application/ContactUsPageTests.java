@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import application.common.TestCase;
 import application.common.utilities.AssertionHelper;
-import application.common.utilities.WebDriverHelper;
+
 
 
 
@@ -27,7 +27,7 @@ public class ContactUsPageTests extends TestCase
 		WebApplication.contactUsPage.inputMessage(messageInput);
 		WebApplication.contactUsPage.clickSubmitButton();
 		
-		WebDriverHelper.assertElementTextContains(WebApplication.contactUsPage.messageSentSuccess, messageSuccess);
+		
 		AssertionHelper.contains(messageSuccess,messageSuccess);
 	}
 	

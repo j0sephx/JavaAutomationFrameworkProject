@@ -1,18 +1,16 @@
 package application.domain.pages;
 
 
-import application.ElementInfo;
-import application.common.utilities.PageDataManager;
-import application.common.utilities.WebDriverHelper;
+import application.Element;
 
 public class Home 
 {
 	private static final String PAGE_NAME = "Home";
 	
-	public ElementInfo contactUsButton;
-	public ElementInfo searchBar;
-	public ElementInfo searchBtn;
-	public ElementInfo signInButton;
+	public Element contactUsButton;
+	public Element searchBar;
+	public Element searchBtn;
+	public Element signInButton;
 	
 	public Home()
 	{
@@ -21,39 +19,37 @@ public class Home
 	
 	public void clickContactUsButton()
 	{
-		WebDriverHelper.click(contactUsButton);
+		contactUsButton.click();
 	}
 	
 	public void clickSearchButton()
 	{
-		WebDriverHelper.click(searchBtn);
+		searchBtn.click();
 	}
 	
 	public void clickSignIn()
 	{
-		WebDriverHelper.click(signInButton);
+		signInButton.click();
 	}
 
 	public void doSearch(String text)
 	{
-		WebDriverHelper.click(searchBar);
+		searchBar.click();
 		inputTextInSearchBar(text);
 		clickSearchButton();
 	}
 	
 	public void inputTextInSearchBar(String text)
 	{
-		WebDriverHelper.inputText(signInButton, text);
+		signInButton.inputText(text);
 	}
 	
 	private void buildPage()
 	{
-		contactUsButton = PageDataManager.findElement("contactUsButton", PAGE_NAME);
-		searchBar = PageDataManager.findElement("searchBar", PAGE_NAME);
-		searchBtn = PageDataManager.findElement("searchBtn", PAGE_NAME);
-		signInButton = PageDataManager.findElement("signInButton", PAGE_NAME);
+		contactUsButton = new Element("contactUsButton", PAGE_NAME);
+		searchBar = new Element("searchBar", PAGE_NAME);
+		searchBtn = new Element("searchBtn", PAGE_NAME);
+		signInButton = new Element("signInButton", PAGE_NAME);
 	}	
-	
-	
-	
+
 }

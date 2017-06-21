@@ -16,7 +16,4 @@ public class FooterTests extends TestCase
 		WebApplication.footer.clickInformationSectionLink(WebApplication.footer.informationSectionLinks, "Our stores");
 	}
 	
-	
-	
-	
 }
