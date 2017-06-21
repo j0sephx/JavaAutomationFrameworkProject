@@ -1,5 +1,6 @@
 package application;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,6 +18,11 @@ public class Element
 	public Element(String elementName, String pageName)
 	{
 		this.elementInfo = PageDataManager.findElement(elementName, pageName);
+	}
+	
+	public String getLocator()
+	{
+		return elementInfo.getLocatorValue();
 	}
 
 	public void assertElementIsDisplayed() throws Exception
@@ -52,9 +58,9 @@ public class Element
 		WebDriverHelper.getDriver().findElement(elementInfo.getLocator()).click();
 	}
 	
-	public void click(ElementInfo elementInfo)
+	public void click(String locator)
 	{
-		WebDriverHelper.getDriver().findElement(elementInfo.getLocator()).click();
+		WebDriverHelper.getDriver().findElement(By.xpath(locator)).click();
 	}
 	
 	public void deselectAllDropdownOptions()

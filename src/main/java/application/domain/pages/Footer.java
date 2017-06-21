@@ -1,9 +1,6 @@
 package application.domain.pages;
 
 import application.Element;
-import application.ElementInfo;
-import application.common.utilities.PageDataManager;
-import application.common.utilities.WebDriverHelper;
 
 public class Footer 
 {
@@ -21,15 +18,10 @@ public class Footer
 	
 	public void clickInformationSectionLink(String title)
 	{
-		String locator = returnInformationSectionLinks(elementInfo.getLocatorValue(), title);
-		informationSectionLinks.click(elementInfo);
-		
+		String locator = String.format(informationSectionLinks.getLocator(), title);
+		informationSectionLinks.click(locator);
 	}
 	
-	public String returnInformationSectionLinks(String locatorValue, String informationSectionLinks)
-	{
-		return String.format(locatorValue,informationSectionLinks);
-	}
 	
 	private void buildPage()
 	{
@@ -39,11 +31,5 @@ public class Footer
 		women   = new Element("women", PAGE_NAME); 
 	}
 	
-	private void clickElement(String locator)
-	{
-		WebDriverHelper.getDriver().findElement(arg0)
-		
-		return getDriver().findElement(By.xpath(locator));
-	}
 }
 
