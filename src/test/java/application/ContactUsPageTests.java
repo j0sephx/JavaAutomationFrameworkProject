@@ -5,10 +5,6 @@ import org.junit.Test;
 import application.common.TestCase;
 import application.common.utilities.AssertionHelper;
 
-
-
-
-
 public class ContactUsPageTests extends TestCase
 {	
 	@Test
@@ -30,6 +26,4 @@ public class ContactUsPageTests extends TestCase
 		
 		AssertionHelper.contains(messageSuccess,messageSuccess);
 	}
-	
-	
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Elements> 
+<Page name="Dresses">
+<Elements>
+	<Element name="dressSubcategorySelect" locatorType="xpath" locatorValue="//a[@class='subcategory-name' and text()='%$1s']"/>
+    <Element name="heading" locatorType="xpath" locatorValue="//div[@class='cat_desc']//span[@class='category-name']"/>
+</Elements>
+</Page>

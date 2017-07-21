@@ -1,15 +1,14 @@
 package application.domain.pages;
 
 
-import application.ElementInfo;
-import application.common.utilities.PageDataManager;
+import application.Element;
 
 public class Header 
 {
 	private static final String PAGE_NAME = "Header";
 	
-	public ElementInfo womenHeader;
-	public ElementInfo headerSubMenuTshirts;
+	public Element womenHeader;
+	public Element headerSubMenuTshirts;
 	
 	public Header()
 	{
@@ -18,7 +17,7 @@ public class Header
 	
 	private void buildPage()
 	{
-		womenHeader  = PageDataManager.findElement("womenHeader", PAGE_NAME);
-		headerSubMenuTshirts = PageDataManager.findElement("headerSubMenuTshirts", PAGE_NAME);
+		womenHeader = new Element("womanHeader", PAGE_NAME);
+		headerSubMenuTshirts = new Element("headerSubMenuTshirts", PAGE_NAME);
 	}
 }

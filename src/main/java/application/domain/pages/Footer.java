@@ -22,6 +22,12 @@ public class Footer
 		informationSectionLinks.click(locator);
 	}
 	
+	public void clickMyAccountSectionLink(String title)
+	{
+		String locator = String.format(myAccountSectionLinks.getLocator(), title);
+		myAccountSectionLinks.click(locator);
+	}
+	
 	
 	private void buildPage()
 	{
@@ -32,4 +38,3 @@ public class Footer
 	}
 	
 }
-

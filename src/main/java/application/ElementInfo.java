@@ -5,8 +5,8 @@ import org.openqa.selenium.By;
 public class ElementInfo
 {
 	private String name;
-	private String locatorValue;
 	private String locatorType;
+	private String locatorValue;
 	private By locator;
 
 	public ElementInfo(String name, String locatorType, String locatorValue)

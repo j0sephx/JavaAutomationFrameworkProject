@@ -2,6 +2,7 @@ package application;
 
 import application.domain.pages.ContactUs;
 import application.domain.pages.CreateAccount;
+import application.domain.pages.Dresses;
 import application.domain.pages.Footer;
 import application.domain.pages.Header;
 import application.domain.pages.Home;
@@ -15,6 +16,7 @@ public class WebApplication
 	public static Header header;
 	public static Home homePage;
 	public static SignIn signInPage;
+	public static Dresses dressesPage;
 	
 	public static void buildPages()
 	{
@@ -24,5 +26,6 @@ public class WebApplication
 		header	=	new Header();
 		homePage = new Home();
 		signInPage = new SignIn();
+		dressesPage = new Dresses();
 	}
 }
