@@ -14,7 +14,7 @@ public class Dresses
 		buildPage();
 	}
 	
-	public void clickInformationSectionLink(String title)
+	public void clickDressSubcategory(String title)
 	{
 		String locator = String.format(dressSubcategorySelect.getLocator(), title);
 		dressSubcategorySelect.click(locator);

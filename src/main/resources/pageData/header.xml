@@ -2,7 +2,6 @@
 <!DOCTYPE Elements> 
 <Page name="Header">
 <Elements>
-	
 	<Element name="dressesHeader" locatorType="xpath" locatorValue="//div[@id='block_top_menu']/ul/li/a[@title='Dresses'] "/>
     <Element name="headerSubMenuTshirts" locatorType="xpath" locatorValue="//ul[@class='submenu-container clearfix first-in-line-xs']//ul//li//a[@title='T-shirts']"/>
 	 <Element name="tshirtsHeader" locatorType="xpath" locatorValue="//div[@id='block_top_menu']/ul/li/a[@title='T-shirts']"/>

@@ -9,6 +9,6 @@ public class DressesPageTests extends TestCase
 	@Test
 	public void navigateToDressesAndSelectSubcategory()
 	{
-		
+		WebApplication.header.navigateToDressesPage();
 	}
 }
