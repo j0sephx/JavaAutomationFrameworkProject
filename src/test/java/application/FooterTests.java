@@ -8,6 +8,15 @@ public class FooterTests extends TestCase
 {
 
 	@Test
+	public void navigateToFooterClickMyAccountSectionLinks()
+	{
+		WebApplication.footer.clickMyAccountSectionLink("My orders");
+		WebApplication.footer.clickMyAccountSectionLink("My credit slips");
+		WebApplication.footer.clickMyAccountSectionLink("My addresses");
+		WebApplication.footer.clickMyAccountSectionLink("Manage my personal information");
+	}
+		
+	@Test
 	public void navigateToFooterAndClickInformationLinks()
 	{
 		WebApplication.footer.clickInformationSectionLink("Specials");
@@ -19,15 +28,6 @@ public class FooterTests extends TestCase
 		WebApplication.footer.clickInformationSectionLink("About us");
 		WebApplication.footer.clickInformationSectionLink("Sitemap");
 	
-	}
-	
-	@Test
-	public void navigateToFooterClickMyAccountSectionLinks()
-	{
-		WebApplication.footer.clickMyAccountSectionLink("My orders");
-		WebApplication.footer.clickMyAccountSectionLink("My credit slips");
-		WebApplication.footer.clickMyAccountSectionLink("My addresses");
-		WebApplication.footer.clickMyAccountSectionLink("Manage my personal information");
 	}
 	
 }

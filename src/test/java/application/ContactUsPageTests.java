@@ -1,6 +1,7 @@
 package application;
 
-import org.junit.Test;
+
+import org.testng.annotations.Test;
 
 import application.common.TestCase;
 import application.common.utilities.AssertionHelper;
